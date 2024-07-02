@@ -4,11 +4,14 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-A few resources to get you started if this is your first Flutter project:
+**Örnek Uygulama**
+**GetX**
+**Tabbar**
 
-<img src="assets/img.png" alt="My logo" style="height: 100px; width:100px;"/>
+<img src="assets/img1.jpg" alt="My logo" style="height: 400px; width:400px;"/>
+<img src="assets/img2.jpg" alt="My logo" style="height: 400px; width:400px;"/>
+<img src="assets/img3.jpg" alt="My logo" style="height: 400px; width:400px;"/>
+<img src="assets/img4.jpg" alt="My logo" style="height: 400px; width:400px;"/>
 
-<img src="assets/img.png" alt="My logo" height="200"  width="200"/>
 
 
