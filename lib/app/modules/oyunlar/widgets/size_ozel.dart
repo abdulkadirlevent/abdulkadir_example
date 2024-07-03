@@ -168,20 +168,26 @@ class SizeOzel extends StatelessWidget {
           child: ListView.builder(
             itemCount: apps.length,
             itemBuilder: (context, index) {
+              var item = apps[index];
               return ListTile(
                 leading: CircleAvatar(
-                  backgroundImage: AssetImage(apps[index]['image']),
+                  backgroundImage: AssetImage(item['image']),
                 ),
-                title: Text(apps[index]['name']),
+                title: Text(item['name']),
                 subtitle: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(apps[index]['category']),
-                    Text(apps[index]['description']),
-                    Text('${apps[index]['rating']} ★'),
+                    Text(item['category']),
+                    Text(item['description']),
                   ],
                 ),
-                trailing: Text(apps[index]['tag']),
+                trailing: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text('${item['rating']} ★'),
+                    Text(item['tag']),
+                  ],
+                ),
               );
             },
           ),
