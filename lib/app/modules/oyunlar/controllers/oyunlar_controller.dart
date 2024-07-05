@@ -9,6 +9,7 @@
  * Örnek Mobil Uygulama
  */
 
+import 'package:abdulkadir_example/app/modules/oyunlar/widgets/home.dart';
 import 'package:abdulkadir_example/app/modules/oyunlar/widgets/size_ozel.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -39,7 +40,7 @@ class OyunlarController extends GetxController with GetSingleTickerProviderState
 
     tabViews.addAll([
       SizeOzel(),
-      const Center(child: Text('Üst sıralar')),
+      HomePage(),
       const Center(child: Text('Çocuklar')),
       const Center(child: Text('Ücretli')),
       const Center(child: Text('Kategoriler')),

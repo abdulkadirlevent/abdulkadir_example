@@ -18,6 +18,14 @@ import 'package:get/get.dart';
 class HomeController extends GetxController {
   final selectedIndex = 0.obs;
 
+  var statusMessage = 'Yakında bizden haber alacaksın'.obs;
+  var statusDate = 'Değerlendirmede • 4 Tem 2024'.obs;
+
+  void updateStatus(String message, String date) {
+    statusMessage.value = message;
+    statusDate.value = date;
+  }
+
   List<Widget> get widgetOptions => [
         const OyunlarView(),
         const UygulamalarView(),
